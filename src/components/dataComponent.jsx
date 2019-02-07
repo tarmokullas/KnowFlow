@@ -5,7 +5,7 @@ import "./dataComp.css";
 class DataComponent extends Component {
   state = {
     timeValue: 0,
-    mylist: [1, 2, 3]
+    value: "Tegevus.."
   };
 
   constructor(props) {
@@ -31,39 +31,35 @@ class DataComponent extends Component {
   handleSubmit(event) {
     alert("A name was submitted: " + this.state.value);
     event.preventDefault();
+    console.log(this.state.value);
   }
 
   render() {
+    document.body.style.backgroundColor = "DeepSkyBlue";
+
     return (
-      <div className="DataComponent">
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input
-              type="text"
-              value={this.state.value}
-              onChange={this.handleChange}
-            />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        <h1>{this.state.value}</h1>
-        <h1>Aeg: </h1>
-        <h1>{this.state.timeValue}</h1>
-        <button
-          onClick={this.HandleAdd}
-          style={{ fontSize: 50, fontWeight: "bold" }}
-          className="btn btn-primary m-3"
-        >
-          +
-        </button>
-        <button
-          onClick={this.HandleMinus}
-          style={{ fontSize: 50, fontWeight: "bold" }}
-          className="btn btn-warning"
-        >
-          --
-        </button>
+      <div className="backgroundClass">
+        <div className="DataComponent">
+          <h1 className="activity">{this.state.value}</h1>
+          <h1 className="timeLabel">Aeg: </h1>
+          <h1 className="timeValue">{this.state.timeValue}</h1>
+          <button
+            onClick={this.HandleAdd}
+            style={{ fontSize: 50, fontWeight: "bold" }}
+            className="btn btn-light m-3"
+            id="positiveButton"
+          >
+            +
+          </button>
+          <button
+            onClick={this.HandleMinus}
+            style={{ fontSize: 50, fontWeight: "bold" }}
+            className="btn btn-warning"
+            id="negativeButton"
+          >
+            --
+          </button>
+        </div>
       </div>
     );
   }
