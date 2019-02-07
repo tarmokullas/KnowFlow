@@ -71,46 +71,45 @@ class FormsComponent extends React.Component {
                 {backdrop}
                 <div class="container">
                     <div class="row" id="activityForm">
-                        <div class="col-md-1 ">
-                            <form>
-                                <div class="input">
-                                    <input
-                                        className="departmentForm"
-                                        placeholder="Department"
-                                        value={this.state.department}
-                                        onChange={e => this.setState({department: e.target.value})}
-                                    />
-                                </div>
-                                <div className="input">
-                                    <input
-                                        className="activityForm"
-                                        placeholder="Activity"
-                                        value={this.state.activity}
-                                        onChange={e => this.setState({activity: e.target.value})}
-                                    />
-                                </div>
-                                <div className="input">
-                                    <input
-                                        className="resourcesSpentForm"
-                                        placeholder="Resources Spent"
-                                        value={this.state.resourcesSpent}
-                                        onChange={e =>
-                                            this.setState({resourcesSpent: e.target.value})
-                                        }
-                                    />
-                                </div>
-                            </form>
-                        </div>
+                        <form>
+                            <div class="input">
+                                <input
+                                    className="departmentForm"
+                                    placeholder="Department"
+                                    value={this.state.department}
+                                    onChange={e => this.setState({department: e.target.value})}
+                                />
+                            </div>
+                            <div className="input">
+                                <input
+                                    className="activityForm"
+                                    placeholder="Activity"
+                                    value={this.state.activity}
+                                    onChange={e => this.setState({activity: e.target.value})}
+                                />
+                            </div>
+                            <div className="input">
+                                <input
+                                    className="resourcesSpentForm"
+                                    placeholder="Resources Spent"
+                                    value={this.state.resourcesSpent}
+                                    onChange={e =>
+                                        this.setState({resourcesSpent: e.target.value})
+                                    }
+                                />
+                            </div>
+                        </form>
                     </div>
 
                     <div class="row" id="dataInsert">
                         <div class="column">
                             <button
+                                id="pmbtn"
                                 onClick={this.handleAdding}
                                 style={{
                                     fontWeight: "bold",
-                                    fontSize: 40,
-                                    border: "solid black 4px"
+                                    fontSize: 30,
+                                    border: "solid #cccccc 1px"
                                 }}
                                 className="btn btn-light"
                             >
@@ -124,33 +123,35 @@ class FormsComponent extends React.Component {
                         </div>
                         <div class="column">
                             <button
+                                id="pmbtn"
                                 onClick={this.handleSubtracting}
                                 style={{
                                     fontWeight: "bold",
-                                    fontSize: 40,
-                                    border: "solid black 4px"
+                                    fontSize: 30,
+                                    border: "solid #cccccc 1pxx"
                                 }}
                                 className="btn btn-light"
                             >
-                                --
+                                -
                             </button>
                         </div>
                     </div>
-                    <div id="submit">
+
+                    <div class="row" id="submit">
                         <button
                             id="SubmitButton"
                             onClick={this.handleTimeValue}
                             onClick={e => this.handleDataSubmit(e)}
                             style={{
                                 fontWeight: "bold",
-                                fontSize: 40,
-                                border: "solid black 4px"
+                                fontSize: 30,
+                                border: "solid #cccccc 1px"
                             }}
-                            className="btn btn-success"
                         >
-                            Submit
+                            SUBMIT
                         </button>
                     </div>
+
                 </div>
             </div>
         );

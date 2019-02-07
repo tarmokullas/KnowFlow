@@ -102,38 +102,48 @@ input {
 }
 
 .row {
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .col-md-1 {
     position: absolute;
-    margin-left: 50%;
     transform: translateX(-150px);
     top: 60%;
-
-}
-
-#SubmitButton {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%);
+    background-color: orange;
 }
 
 #activityForm {
-    width: 100%;
-    height: 25em;
+    margin-top: 20%;
 }
 
 #dataInsert {
-    position: absolute;
-    top: 60%;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#pmbtn {
+    width: 50px;
+}
+
+#SubmitButton {
+    background-color: #39ac39;
+    color: white;
+    border-radius: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+#submit {
+    margin-top: 5%;
 }
 
 .timeValueClass {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
+
+
 
 /*  -------------------------  */
 /*  -----  SIDE DRAWER  -----  */
