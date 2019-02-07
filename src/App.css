@@ -1,36 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /*  ----------------------  */
 /*  -----  BACKDROP  -----  */
 /*  ----------------------  */
@@ -58,7 +25,7 @@
 }
 
 body {
-    background-color: blueviolet;
+    background-color: #660066;
 }
 
 .activity {
@@ -118,25 +85,39 @@ body {
 /*  -----  FORMS COMPONENT STYLE  -----  */
 /*  -----------------------------------  */
 
+.input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 input {
-    background-color: deepskyblue;
-    border: solid white 5px;
-    height: 90px;
+    background-color: white;
+    border: solid #cccccc 1px;
+    border-radius: 8px;
+    height: 50px;
     width: 300px;
     font-size: 24px;
-    color: floralwhite;
+    color: black;
+    padding: 10px;
+}
+
+.row {
+    margin: 0 auto;
 }
 
 .col-md-1 {
     position: absolute;
-    left: 40%;
-    top: 20%;
+    margin-left: 50%;
+    transform: translateX(-150px);
+    top: 60%;
+
 }
 
 #SubmitButton {
     position: absolute;
-    left: 45%;
+    left: 50%;
     bottom: 10%;
+    transform: translate(-50%);
 }
 
 #activityForm {
@@ -146,13 +127,12 @@ input {
 
 #dataInsert {
     position: absolute;
-    left: 42%;
     top: 60%;
 }
 
 .timeValueClass {
     padding-right: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 /*  -------------------------  */
@@ -255,9 +235,9 @@ input {
     color: orange;
 }
 
-/*  -----------------------  */
-/*  -----  TOOLBAR  -------  */
-/*  -----------------------  */
+/*  ---------------------  */
+/*  -----  INDEX  -------  */
+/*  ---------------------  */
 
 body {
     margin: 0;
