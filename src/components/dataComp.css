@@ -1,0 +1,36 @@
+.DataComponent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: blueviolet;
+}
+
+.activity {
+  position: relative;
+  left: 10%;
+}
+
+.timeValue {
+  position: relative;
+  left: 35%;
+}
+
+.timeLabel {
+  position: relative;
+  left: 30%;
+}
+
+#positiveButton {
+  position: relative;
+  left: 10%;
+}
+
+#negativeButton {
+  position: relative;
+  left: 15%;
+}
