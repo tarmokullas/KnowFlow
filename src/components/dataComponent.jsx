@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { TextField, validator } from "react-textfield";
-import "./dataComp.css";
+import "./../App.css";
 
 class DataComponent extends Component {
   state = {

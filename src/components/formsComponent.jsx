@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./formsComponentStyle.css";
+import "./../App.css";
 import Toolbar from "./toolbar";
 import Sidebar from "./SideDrawer";
 import Backdrop from "./Backdrop";
