@@ -1,3 +1,15 @@
+$("#myProgress").toggle();
+$(".button_base").click(
+    function () {
+        $(".button_base").toggle();
+        $("#myProgress").toggle();
+        move();
+    }
+);
+
+
+
+
 var data1 = (data = {
   datasets: [
     {
@@ -88,3 +100,21 @@ var myChart2 = new Chart(ctx1, {
     title: { display: true, text: "General" }
   }
 });
+
+var target = document.getElementById('foo');
+var spinner = new Spinner(opts).spin(target);
+
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 600);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+    }
+}
+
