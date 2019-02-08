@@ -1,11 +1,11 @@
-This project was created during Student Startup Camp organized by University of Tartu. The hackathon ran from 5th-9th february.
+This project was created during Student Startup Camp organized by University of Tartu. The hackathon ran from 5th-9th february.<br />
 The aim of this project was to create a tool for small to medium manufacturing companies to help them track workflow, optimize time managment and give a bigger overview of the production.
-
+<br />
 Web app was created using javascript and react.
 
-Team members:
-Team lead: Steven Leego
-Developers: Marcus Murumäe, Krister Looga, Karl Martin Mägi, Tarmo Kullas
+Team members:<br />
+Team lead: Steven Leego<br />
+Developers: Marcus Murumäe, Krister Looga, Karl Martin Mägi, Tarmo Kullas<br />
 Marketing: Merilin Teppo
 
 
