@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knowflow</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="styles.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        height: 100%;
+        min-height: 100%;
+    }
+
+    #main {
+        height: 1000px;
+        width: 100%;
+        position: fixed;
+    }
+
+    #main:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("background.jpeg");
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    #gradientOn {
+        position: absolute;
+        opacity: 0.7;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(blue, 10%, purple);
+
+    }
+
+    #ourSlogan {
+        text-align: center;
+        font-size: 70px;
+        display: block;
+        margin: 100px auto;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+
+    }
+
+    #ourSlogan p {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+
+    }
+
+    .example_a {
+        margin-top: 200px;
+        color: #fff !important;
+        text-transform: uppercase;
+        background: rebeccapurple;
+        padding: 35px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        font-family: Raleway;
+        font-size: 30px;
+        text-decoration: none;
+        margin-top: 520px;
+    }
+
+    .example_a:hover {
+        background: #434343;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.4s ease 0s;
+    }
+
+    .button_cont {
+        position: inherit;
+    }
+
+    p {
+        margin-top: 200px;
+    }
+
+    .centered {
+        position: sticky; /* or absolute */
+        left: 50%;
+    }
+
+    #logoSection {
+        margin-top: 50px;
+        position: absolute;
+        margin-left: 23%;
+    }
+
+    img {
+        padding-right: 80px;
+    }
+</style>
+
+<body>
+
+<header class="toolbar">
+    <nav class="toolbar_navigation">
+        <div></div>
+        <div class="toolbar_logo">
+            <a href="/">KNOWFLOW</a>
+        </div>
+        <div class="spacer"></div>
+        <div class="toolbar_navigation_items">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="create_task.html">Create task</a></li>
+                <li><a href="execution.html">Execute task</a></li>
+                <li><a href="stats.html">Statistics</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="main">
+    <div id="gradientOn">'
+    </div>
+    <div id="ourSlogan">
+        <p>Track and follow your company's workflows</p>
+    </div>
+    <div class="button_cont centered" align="center"><a class="example_a" href="add-website-here" target="_blank"
+                                                        rel="nofollow noopener">Get Started</a></div>
+    <div id="logoSection">
+        <div id="logoImages">
+            <img width="300px" src="1.png" alt="firma logo">
+            <img width="300px" src="2.png" alt="firma logo">
+            <img width="300px" src="3.png" alt="firma logo">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
