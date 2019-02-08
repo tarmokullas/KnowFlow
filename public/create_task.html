@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+</head>
+
+<script>
+    function show() {
+        var select_status = $('#task-selector').val();
+        /* if select personal from select box then show my text box */
+
+        if (select_status == 'Log') {
+            $('#amount-div').show();// By using this id you can show your content
+            $('#edit-div').show();// By using this id you can show your content
+
+        }
+        else {
+            $('#amount-div').hide();// otherwise hide
+            $('#edit-div').hide();// otherwise hide
+        }
+    }
+</script>
+<body>
+
+<!--********-->
+<!-- NAVBAR -->
+<!--********-->
+
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</div>
+
+<!--******-->
+<!-- MAIN -->
+<!--******-->
+
+</div>
+<div id="mainWrap">
+
+    <div id="page-title">
+        <h1>CREATE TASK</h1>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <div class="form-column">
+                <div class="form-row">
+                    <select>
+                        <option value="factory1">Workbench 1</option>
+                        <option value="factory2">Workbench 2</option>
+                    </select>
+                </div>
+
+                <div class="form-row" id="time1">
+                    <input type="time" name="start_time" class="input-time" value="11:30">
+                    <input type="date" name="start_date" class="input-date" value="2019-02-09">
+                </div>
+
+                <div class="form-row" id="time2">
+                    <input type="time" name="start_time" class="input-time" value="12:30">
+                    <input type="date" name="start_date" class="input-date" value="2019-02-09">
+                </div>
+
+                <div class="form-row">
+                    <select>
+                        <option value="worker1">Peeter Mustikas</option>
+                        <option value="worker2">Mari Maasikas</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <select name="task-selector" id="task-selector" onchange="show()">
+                        <option value="none">Select task</option>
+                        <option value="Log">Log painting</option>
+                    </select>
+                </div>
+
+                <div class="form-row" id="amount-div" >
+                    <input type="number" name="amount" id="amount-input" value="5" placeholder="Amount in pcs">
+                </div>
+
+                <div class="form-row" id="edit-div">
+                    <button id="edit-btn">EDIT TASKS</button>
+                </div>
+
+                <div class="form-row" id="submit">
+                    <button id="submit-btn">CREATE</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+
+</div>
+
+</body>
+
+
+</html>

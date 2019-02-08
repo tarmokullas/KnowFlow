@@ -74,28 +74,44 @@ class FormsComponent extends React.Component {
                         <form>
                             <div class="input">
                                 <input
-                                    className="departmentForm"
-                                    placeholder="Department"
+                                    className="locationForm"
+                                    placeholder="Location"
                                     value={this.state.department}
                                     onChange={e => this.setState({department: e.target.value})}
                                 />
                             </div>
                             <div className="input">
                                 <input
-                                    className="activityForm"
-                                    placeholder="Activity"
+                                    className="taskForm"
+                                    placeholder="Task"
                                     value={this.state.activity}
                                     onChange={e => this.setState({activity: e.target.value})}
                                 />
                             </div>
                             <div className="input">
                                 <input
-                                    className="resourcesSpentForm"
-                                    placeholder="Resources Spent"
+                                    className="timeframeForm"
+                                    placeholder="Timeframe"
                                     value={this.state.resourcesSpent}
                                     onChange={e =>
                                         this.setState({resourcesSpent: e.target.value})
                                     }
+                                />
+                            </div>
+                            <div className="input">
+                                <input
+                                    className="amountForm"
+                                    placeholder="Amount"
+                                    value={this.state.activity}
+                                    onChange={e => this.setState({activity: e.target.value})}
+                                />
+                            </div>
+                            <div className="input">
+                                <input
+                                    className="workerForm"
+                                    placeholder="Worker"
+                                    value={this.state.activity}
+                                    onChange={e => this.setState({activity: e.target.value})}
                                 />
                             </div>
                         </form>

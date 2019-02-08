@@ -134,6 +134,11 @@ input {
 
 }
 
+#SubmitButton:Active {
+    background-color: #2d862d;
+
+}
+
 #submit {
     margin-top: 5%;
 }
