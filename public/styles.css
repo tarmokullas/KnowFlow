@@ -1,69 +1,68 @@
-
 /* ------- */
 /* TOOLBAR */
 /* ------- */
 
 .toolbar {
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    background: purple;
-    height: 56px;
-    z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background: purple;
+  height: 56px;
+  z-index: 5;
 }
 
 .toolbar_logo {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .toolbar_navigation {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 1rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .spacer {
-    flex: 1;
+  flex: 1;
 }
 
 .toolbar_logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .toolbar_navigation_items ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .toolbar_navigation_items li {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .toolbar_navigation_items a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active {
-    color: orange;
+  color: orange;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 /* ----------- */
@@ -71,103 +70,248 @@ body {
 /* ----------- */
 
 form {
-    height: fit-content;
-    width: fit-content;
-    margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .form-column {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
 }
 
 .form-row {
-    width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
 }
 
-#time1, #time2 {
-    display: flex;
-    flex-direction: row;
+#time1,
+#time2 {
+  display: flex;
+  flex-direction: row;
 }
 
 #page-title {
-    margin-top: 50px;
-    font-family: "Raleway";
-    color: white;
+  margin-top: 50px;
+  font-family: "Raleway";
+  color: white;
 }
 
-#amount-div, #edit-div{
-    display: none;
-
+#amount-div,
+#edit-div {
+  display: none;
 }
 
-select, input, #submit-btn, #edit-btn {
-    border: none;
-    border-radius: 10px;
-    padding-left: 10px;
-    height: 50px;
+select,
+input,
+#submit-btn,
+#edit-btn {
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  height: 50px;
 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-#unit, select, input, #submit-btn, #edit-btn {
-    font-family: "Open Sans";
-    font-size: 18px;
-    border: lightgray solid 1px;
+#unit,
+select,
+input,
+#submit-btn,
+#edit-btn {
+  font-family: "Open Sans";
+  font-size: 18px;
+  border: lightgray solid 1px;
 }
 
 #unit {
-    color: white;
+  color: white;
 }
 
 select {
-    width: 100%;
+  width: 100%;
 
-    background: url(http://www.foxrep.com/wp-content/uploads/2017/11/Down-Arrow-PNG.png) 96% / 5% white no-repeat;
+  background: url(http://www.foxrep.com/wp-content/uploads/2017/11/Down-Arrow-PNG.png)
+    96% / 5% white no-repeat;
 }
 
 select-items {
-    background-color: #39ac39;
+  background-color: #39ac39;
 }
 
 #submit-btn {
-    background-color: #39ac39;
-    color: white;
-    width: 100%;
+  background-color: #39ac39;
+  color: white;
+  width: 100%;
 }
 
 #submit-btn:active {
-    background-color: green;
+  background-color: green;
 }
 
 #edit-btn {
-    background-color: royalblue;
-    color: white;
-    width: 100%;
+  background-color: royalblue;
+  color: white;
+  width: 100%;
 }
 
-#edit-btn:active{
-    background-color: mediumblue;
+#edit-btn:active {
+  background-color: mediumblue;
 }
-
 
 .input-time {
-    width: 30%;
-    margin-right: 5%;
+  width: 30%;
+  margin-right: 5%;
 }
 
 .input-date {
-    width: 65%;
+  width: 65%;
 }
 
 #amount-input {
-    width: 100%;
-    padding-right: 20px;
+  width: 100%;
+  padding-right: 20px;
+}
+
+/*KARLI GRAPHID ÄRA PUUTU*/
+
+#chart1 {
+  position: relative;
+  top: -50%;
+  left: 20%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#chart2 {
+  position: relative;
+  top: -40%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.toolbar {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background: purple;
+  height: 56px;
+  z-index: 5;
+}
+
+.toolbar_logo {
+  margin-left: 1rem;
+}
+
+.toolbar_navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar_logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.toolbar_navigation_items ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_navigation_items li {
+  padding: 0 0.5rem;
+}
+
+.toolbar_navigation_items a {
+  color: white;
+  text-decoration: none;
+}
+
+.toolbar_navigation_items a:hover,
+.toolbar_navigation_items a:active {
+  color: orange;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+#container,
+#container1,
+#container2 {
+  padding-top: 0.5%;
+  margin-left: 20px;
+  width: 400px;
+  height: 8px;
+}
+
+#xdxd {
+  padding-top: 5%;
+  margin-left: 20px;
+  padding-bottom: 0%;
+  font-weight: bold;
+}
+
+#dxdx {
+  padding-top: 0.2%;
+  margin-left: 20px;
+  color: #ffae42;
+  -webkit-text-stroke: 0.05px yellow;
+  font-weight: bold;
+}
+
+#suema {
+  float: center;
+  color: darkgreen;
+  text-shadow: 1px 1px lightgoldenrodyellow;
+}
+
+#tood {
+  position: relative;
+  left: 58%;
+  width: 35%;
+  top: 10%;
+}
+
+#dxdx1 {
+  padding-top: 0.2%;
+  margin-left: 20px;
+  color: #ff4500;
+  -webkit-text-stroke: 0.05px yellow;
+  font-weight: bold;
+}
+
+#dxdx2 {
+  padding-top: 0.2%;
+  margin-left: 20px;
+  color: green;
+  -webkit-text-stroke: 0.05px yellow;
+  font-weight: bold;
 }
