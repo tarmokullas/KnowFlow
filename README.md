@@ -1,6 +1,6 @@
 This project was created during Student Startup Camp organized by University of Tartu. The hackathon ran from 5th-9th february.<br />
-The aim of this project was to create a tool for small to medium manufacturing companies to help them track workflow, optimize time managment and give a bigger overview of the production.
-<br />
+The aim of this project was to create a tool for small to medium manufacturing companies to help them track workflow, optimize time managment and give a bigger overview of the production.<br/>
+
 Web app was created using javascript and react.
 
 Team members:<br />
