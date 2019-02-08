@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="theme-color" content="#000000"/>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("nav.html");
-        });
+            crossorigin="anonymous">
     </script>
     <title>React App</title>
 </head>
-<body>
+<body style="height: 100%">
 
 <!--********-->
 <!-- NAVBAR -->
 <!--********-->
 
-<div id="nav-placeholder"></div>
+<header class="toolbar">
+    <nav class="toolbar_navigation">
+        <div></div>
+        <div class="toolbar_logo">
+            <a href="/">KNOWFLOW</a>
+        </div>
+        <div class="spacer"></div>
+        <div class="toolbar_navigation_items">
+            <ul>
+                <li><a href="create_task.html">Create task</a></li>
+                <li><a href="stats.html">Statistics</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 <!--******-->
 <!-- MAIN -->
@@ -62,6 +68,7 @@
         <p id="suema">Next: Last package</p>
     </div>
 </div>
+
 <div style="height: 40%; width: 45%" id="chart1">
     <canvas id="myChart"></canvas>
     <script
@@ -69,6 +76,7 @@
             charset="utf-8"
     ></script>
 </div>
+
 <div style="height:35%; width: 45%" id="chart2">
     <canvas id="myChart2"></canvas>
     <script
