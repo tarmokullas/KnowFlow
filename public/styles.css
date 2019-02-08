@@ -3,6 +3,11 @@ body {
     font-family: "Open Sans";
 }
 
+/* -------- */
+/* HOMEPAGE */
+/* -------- */
+
+
 /* -------------- */
 /* EXECUTION PAGE */
 /* -------------- */
@@ -161,6 +166,7 @@ body {
 #page-title {
     margin-top: 80px;
     font-family: "Raleway";
+    font-size: 50px;
     font-weight: bold;
     color: black;
     text-align: center;
@@ -169,7 +175,7 @@ body {
 .form-container {
     height: 50%;
     width: 50%;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -277,7 +283,7 @@ select-items {
 
 #chart1 {
   position: relative;
-  top: -30%;
+  top: -45%;
   left: 20%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -285,7 +291,7 @@ select-items {
 
 #chart2 {
   position: relative;
-  top: -20%;
+  top: -45%;
   left: 25%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
