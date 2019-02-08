@@ -3,66 +3,66 @@
 /* ------- */
 
 .toolbar {
-  position: fixed;
-  width: 100%;
-  top: 0%;
-  left: 0%;
-  background: purple;
-  height: 56px;
-  z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: purple;
+    height: 56px;
+    z-index: 5;
 }
 
 .toolbar_logo {
-  margin-left: 1rem;
+    margin-left: 1rem;
 }
 
 .toolbar_navigation {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  padding: 0 1rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .spacer {
-  flex: 1;
+    flex: 1;
 }
 
 .toolbar_logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .toolbar_navigation_items ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .toolbar_navigation_items li {
-  padding: 0 0.5rem;
+    padding: 0 0.5rem;
 }
 
 .toolbar_navigation_items a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active {
-  color: orange;
+    color: orange;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
 }
 
 /* ----------- */
@@ -70,72 +70,65 @@ body {
 /* ----------- */
 
 form {
-  height: fit-content;
-  width: fit-content;
-  margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .form-column {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
 }
 
 .form-row {
-  width: 400px;
-  margin: 0 auto;
-  padding: 10px;
-  justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
 }
 
-#time1,
-#time2 {
-  display: flex;
-  flex-direction: row;
+#time1, #time2 {
+    display: flex;
+    flex-direction: row;
 }
 
 #page-title {
-  margin-top: 50px;
-  font-family: "Raleway";
-  color: white;
+    margin-top: 50px;
+    font-family: "Raleway";
+    font-weight: bold;
+    color: black;
 }
 
-#amount-div,
-#edit-div {
-  display: none;
+#amount-div, #edit-div{
+    display: none;
+
 }
 
-select,
-input,
-#submit-btn,
-#edit-btn {
-  border: none;
-  border-radius: 10px;
-  padding-left: 10px;
-  height: 50px;
+select, input, #submit-btn, #edit-btn {
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 50px;
 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-#unit,
-select,
-input,
-#submit-btn,
-#edit-btn {
-  font-family: "Open Sans";
-  font-size: 18px;
-  border: lightgray solid 1px;
+#unit, select, input, #submit-btn, #edit-btn {
+    font-family: "Open Sans";
+    font-size: 18px;
+    border: lightgray solid 1px;
 }
 
 #unit {
-  color: white;
+    color: white;
 }
 
 select {
-  width: 100%;
+    width: 100%;
 
   background: url(http://www.foxrep.com/wp-content/uploads/2017/11/Down-Arrow-PNG.png)
     96% / 5% white no-repeat;
@@ -165,6 +158,7 @@ select-items {
   background-color: mediumblue;
 }
 
+
 .input-time {
   width: 30%;
   margin-right: 5%;
@@ -183,7 +177,7 @@ select-items {
 
 #chart1 {
   position: relative;
-  top: -50%;
+  top: -30%;
   left: 20%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -191,7 +185,7 @@ select-items {
 
 #chart2 {
   position: relative;
-  top: -40%;
+  top: -20%;
   left: 25%;
   margin-right: -50%;
   transform: translate(-50%, -50%);

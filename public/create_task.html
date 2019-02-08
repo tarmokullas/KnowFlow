@@ -26,6 +26,10 @@
             $('#edit-div').hide();// otherwise hide
         }
     }
+
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+    });
 </script>
 <body>
 
@@ -33,27 +37,7 @@
 <!-- NAVBAR -->
 <!--********-->
 
-<header class="toolbar">
-    <nav class="toolbar_navigation">
-        <div class="toolbar_logo">
-            <a href="/">KNOWFLOW</a>
-        </div>
-        <div class="spacer"></div>
-        <div class="toolbar_navigation_items">
-            <ul>
-                <li>
-                    <a href="/">Homepage</a>
-                </li>
-                <li>
-                    <a href="/">Product</a>
-                </li>
-                <li>
-                    <a href="stats.html">Statistics</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<div id="nav-placeholder"></div>
 
 <!--******-->
 <!-- MAIN -->
