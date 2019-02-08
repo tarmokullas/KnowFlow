@@ -44,6 +44,7 @@
   left: 0%;
   background: purple;
   height: 56px;
+  z-index: 5;
 }
 
 .toolbar_logo {
