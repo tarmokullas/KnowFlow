@@ -1,10 +1,3 @@
-$("#myProgress").toggle();
-$(".button_base").click(function() {
-  $(".button_base").toggle();
-  $("#myProgress").toggle();
-  move();
-});
-
 var bar = new ProgressBar.Line(container, {
   strokeWidth: 2.3,
   easing: "easeInOut",
