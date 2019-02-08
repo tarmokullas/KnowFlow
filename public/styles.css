@@ -1,3 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+    font-family: "Open Sans";
+}
+
+/* -------------- */
+/* EXECUTION PAGE */
+/* -------------- */
+
+.base_layout {
+    margin-top: 100px;
+}
+
+.rm_tasks {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    border: solid purple 4px;
+}
+
+.rm_task {
+    background-color: #f1f1f1;
+    border: purple solid 3px;
+    width: 360px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.timerow {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.timerow > h1 {
+    width: 360px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 15px;
+}
+
+.rm_nextstep_button {
+    font-size: 32px;
+    padding: 64px 48px;
+    margin: 35px;
+    border-radius: 8px;
+    width: 300px;
+    left: 40%;
+
+    position: relative;
+    background-color: #39ac39;
+    color: white;
+
+    -webkit-transition-duration: 0.4s; /*Safari*/
+    transition-duration: 0.4s;
+}
+
+.rm_nextstep_button:active {
+    background-color: green;
+}
+
+.rm_activity_edit {
+    width: 125px;
+    margin: 10px;
+    text-align: center;
+
+    font-size: 15px;
+    border-radius: 8px;
+
+    background-color: white;
+    color: black;
+    border: solid 2px;
+}
+.background-color > div {
+    border: yellowgreen;
+}
+
+.bottom_row {
+    position: relative;
+    left: 42.5%;
+}
+
+.informationrow {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: minmax(200px, 1fr) 200px 200px;
+    padding: 20px 0 60px 0;
+    font-size: 100%;
+}
+
+.informationrow > h1 {
+    color: black;
+    font-size: 25px;
+}
+
+
 /* ------- */
 /* TOOLBAR */
 /* ------- */
@@ -60,11 +159,9 @@
 /* ----------- */
 
 #page-title {
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 80px;
     font-family: "Raleway";
     font-weight: bold;
-    font-size: 50px;
     color: black;
     text-align: center;
 }
@@ -72,7 +169,9 @@
 .form-container {
     height: 50%;
     width: 50%;
-    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
 }
