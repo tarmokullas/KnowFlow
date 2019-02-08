@@ -37,6 +37,10 @@
   background: white;
 }
 
+/* SIIIT ALGAB TOOLBARI CSS
+s!!!!!
+!!!!! */
+
 .toolbar {
   position: fixed;
   width: 100%;
@@ -100,6 +104,9 @@ body {
   height: 100%;
 }
 
+/* Toolbari osa läbi 
+!!!!!!*/
+
 html {
   height: 100%;
 }
@@ -155,4 +162,13 @@ html {
   color: green;
   -webkit-text-stroke: 0.05px yellow;
   font-weight: bold;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
 }
