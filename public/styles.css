@@ -248,7 +248,7 @@ form {
     flex-direction: row;
 }
 
-#amount-div, #edit-div{
+#amount-div, #edit-div, #color-div{
     display: none;
 
 }

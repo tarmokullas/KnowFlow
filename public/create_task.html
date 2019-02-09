@@ -19,11 +19,14 @@
         if (select_status == 'Log') {
             $('#amount-div').show();// By using this id you can show your content
             $('#edit-div').show();// By using this id you can show your content
+            $('#color-div').show();// By using this id you can show your content
 
         }
         else {
             $('#amount-div').hide();// otherwise hide
             $('#edit-div').hide();// otherwise hide
+            $('#color-div').hide();// By using this id you can show your content
+
         }
     }
 </script>
@@ -98,6 +101,14 @@
 
                 <div class="form-row" id="amount-div">
                     <input type="number" name="amount" id="amount-input" value="5" placeholder="Amount in pcs">
+                </div>
+
+                <div class="form-row" id="color-div">
+                    <select>
+                        <option value="none">Select color</option>
+                        <option value="color1">Red</option>
+                        <option value="color1">Blue</option>
+                    </select>
                 </div>
 
                 <div class="form-row" id="edit-div">
