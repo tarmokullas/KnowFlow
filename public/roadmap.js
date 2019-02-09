@@ -11,6 +11,10 @@ function changeColor() {
 
         col.style.background = "yellow";
         veryVitalList[i] = "working";
+
+        var timeCol = document.getElementById("aeg" + i.toString());
+        timeCol.textContent = "...";
+
     } else if (veryVitalList[i] == "working") {
         t2 = Date.now();
 
