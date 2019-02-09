@@ -17,6 +17,7 @@ body {
 }
 
 .rm_tasks {
+    font-family: "Open Sans";
     display: flex;
     flex-wrap: nowrap;
     background-color: white;
@@ -25,12 +26,13 @@ body {
 
 .rm_task {
     background-color: #f1f1f1;
-    border: purple solid 3px;
+    border: lightgray solid 1px;
     width: 360px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+
 }
 
 .timerow {
@@ -40,6 +42,7 @@ body {
 }
 
 .timerow > h1 {
+    font-family: "Open Sans";
     width: 360px;
     margin: 10px;
     text-align: center;
@@ -49,11 +52,17 @@ body {
 
 .rm_nextstep_button {
     font-size: 32px;
-    padding: 64px 48px;
-    margin: 35px;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    border: lightgray solid 1px;
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     width: 300px;
-    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
 
     position: relative;
     background-color: #39ac39;
@@ -67,28 +76,60 @@ body {
     background-color: green;
 }
 
+.rm_activitybar {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_row {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#edit-task-btn {
+    margin-right: 2%;
+}
+
+#delete-btn {
+    margin-left: 2%;
+}
+
 .rm_activity_edit {
-    width: 125px;
-    margin: 10px;
+    border-radius: 10px;
+    font-family: "Open Sans";
+    border: lightgray solid 1px;
+    padding: 10px;
+
+
+    width: 48%;
     text-align: center;
 
-    font-size: 15px;
-    border-radius: 8px;
+    font-size: 18px;
 
     background-color: white;
     color: black;
-    border: solid 2px;
 }
 .background-color > div {
     border: yellowgreen;
 }
 
 .bottom_row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
-    left: 42.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+
 }
 
 .informationrow {
+    font-family: "Open Sans";
+    font-weight: normal;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: minmax(200px, 1fr) 200px 200px;
@@ -99,6 +140,7 @@ body {
 .informationrow > h1 {
     color: black;
     font-size: 25px;
+    padding-left: 40px;
 }
 
 

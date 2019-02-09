@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <link href="styles.css" type="text/css" rel="stylesheet">
     <title>KnowFlow</title>
 </head>
@@ -47,15 +47,16 @@
             <h1>Total time:</h1>
             <h1 id="total_time_html"></h1>
         </div>
+
         <div class="rm_tasks">
             <button class="rm_task" id="task1">
-                Planning
+                Preparing
             </button>
             <button class="rm_task" id="task2">
-                Log 2
+                Chair 1
             </button>
             <button class="rm_task" id="task3">
-                Log 3
+                Chair 2
             </button>
             <button class="rm_task" id="task4">
                 Cleaning
@@ -68,19 +69,13 @@
             <h1 id="aeg4"></h1>
         </div>
         <div class="rm_activitybar">
-            <div>
-                <button
-                        id="next_step"
-                        class="rm_nextstep_button"
-                        onclick="changeColor()"
-                >
-                    Next step
-                </button>
-            </div>
+
+            <button id="next_step" class="rm_nextstep_button" onclick="changeColor()">NEXT STEP</button>
+
             <div class="bottom_row">
                 <div class="activity_row">
-                    <button class="rm_activity_edit">Edit activity</button>
-                    <button class="rm_activity_edit">Delete</button>
+                    <button class="rm_activity_edit" id="edit-task-btn">EDIT TASK</button>
+                    <button class="rm_activity_edit" id="delete-btn">DELETE</button>
                 </div>
             </div>
         </div>
