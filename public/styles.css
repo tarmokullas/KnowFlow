@@ -20,8 +20,7 @@ body {
     font-family: "Open Sans";
     display: flex;
     flex-wrap: nowrap;
-    background-color: white;
-    border: solid purple 4px;
+    background-color: #d9d9d9;
 }
 
 .rm_task {
@@ -318,7 +317,6 @@ select-items {
 
 #amount-input {
   width: 100%;
-  padding-right: 20px;
 }
 
 /*KARLI GRAPHID ÄRA PUUTU*/
